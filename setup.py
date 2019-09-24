@@ -13,7 +13,7 @@ AUTHOR = 'Ricardo Ocampo'
 URL = 'https://github.com/ocampor/libsvm'
 VERSION = libsvm.__version__
 
-with open(os.path.join(ROOT_PATH, 'README.rst'), 'r') as readme:
+with open(os.path.join(ROOT_PATH, 'README.rst'), 'r', encoding="utf-8") as readme:
     LONG_DESCRIPTION = readme.read()
 
 libsvm = Extension(
